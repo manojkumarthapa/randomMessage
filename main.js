@@ -49,4 +49,12 @@ let messages = ["Send someone a handwritten letter or postcard",
 "Give someone else the cab that you hailed",
 "Let someone else get seated before you at a busy restaurant",
 "Share your table with someone at a busy food court"
-]
+];
+
+
+
+const but = document.getElementById("demo");
+
+function message () {
+    return but.innerHTML = messages[Math.floor(Math.random() * messages.length)] + ".";
+}
